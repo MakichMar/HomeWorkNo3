@@ -34,25 +34,29 @@ public class HomeWork3 {
 // Task 2
         Scanner i = new Scanner(System.in);
         System.out.println("Select your floor");
-        int floor =  i.nextInt();
-        switch (floor) {
-            case 1:
-                System.out.println("Go to 1 floor");
-                break;
-            case 2:
-                System.out.println("Go to 2 floor");
-                break;
-            case 3:
-                System.out.println("Go to 3 floor");
-                break;
-            case 4:
-                System.out.println("Go to 4 floor");
-                break;
-            case 5:
-                System.out.println("Go to 5 floor");
-                break;
-            default:
-                System.out.println("Going to parking ");
+        int floor = i.nextInt();
+        if (floor > 5)
+            System.out.println("Тhe house can't be higher than the 5th floor");
+        else {
+            switch (floor) {
+                case 1:
+                    System.out.println("Go to 1 floor");
+                    break;
+                case 2:
+                    System.out.println("Go to 2 floor");
+                    break;
+                case 3:
+                    System.out.println("Go to 3 floor");
+                    break;
+                case 4:
+                    System.out.println("Go to 4 floor");
+                    break;
+                case 5:
+                    System.out.println("Go to 5 floor");
+                    break;
+                default:
+                    System.out.println("Going to parking ");
+            }
         }
     }
 }
